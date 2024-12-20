@@ -1,5 +1,6 @@
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import * as Clipboard from "expo-clipboard";
+import * as Crypto from "expo-crypto";
 import * as Haptics from "expo-haptics";
 import React, { useEffect, useState } from "react";
 import {
@@ -229,6 +230,7 @@ const Chat = ({ thread }: Props) => {
         )}
         renderInputToolbar={(props) => MessengerBarContainer(props)}
         scrollToBottom
+        messageIdGenerator={Crypto.randomUUID}
         // textInputProps={{ autoFocus: true }}
         // scrollToBottomStyle={{ backgroundColor: "#FFF" }}
         // onPress={(context, message) => console.log("onPress", context, message)}
