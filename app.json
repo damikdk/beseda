@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.damirka.beseda"
+      "bundleIdentifier": "com.damirka.beseda",
+      "appleTeamId": "BZ82DRDZY8"
     },
     "android": {
       "adaptiveIcon": {
